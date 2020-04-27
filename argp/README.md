@@ -2,11 +2,11 @@
 
 Argp is a simple C++ option parser library.
 
-There are two ways to give options:
-    -short
-    -short argument
-    --long
-    --long argument
+There are two ways to give options:<br>
+    -short<br>
+    -short argument<br>
+    --long<br>
+    --long argument<br>
 
 # Basics
 
