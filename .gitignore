@@ -89,3 +89,4 @@ $RECYCLE.BIN/
 *.hash
 docs/html/
 docs/latex/
+main.cpp

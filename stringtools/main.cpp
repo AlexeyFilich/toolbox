@@ -6,10 +6,12 @@ g++ -std=c++17 main.cpp -o main && ./main
 #include "stringtools.hpp"
 
 int main() {
-    // std::cout << stringtools::findInstance("CDBAAOFAAN", "AA", 0) << "\n";
-    // std::cout << stringtools::findInstance("CDBAAOFAAN", "AA", 1) << "\n";
-    // std::cout << stringtools::findInstance("CDBAAOFAAN", "AA", 2) << "\n";
-    // std::cout << stringtools::replaceAllInstances("Hello Privet Hola Privet Bonjour", "Privet", "Zdorova") << "\n";
-    
+    // std::string test =
+    // "test {replaceme} and {me}\n"
+    // "what's {me} up\n"
+    // "but... dont replace {me}";
+    // test = stringtools::replaceAllInstances(test, "{me}", "REPLACEDME");
+    // test = stringtools::replaceAllInstances(test, "{replaceme}", "LOL");
+    // std::cout << test << "\n";
     return 0;
 }
