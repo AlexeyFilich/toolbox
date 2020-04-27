@@ -2,6 +2,7 @@
 #define ARGP_H
 #ifdef ARGP_H
 
+#include <iostream>
 #include <string>
 #include <vector>
 
