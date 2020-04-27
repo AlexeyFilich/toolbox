@@ -13,4 +13,5 @@ For Visual Studio Code with C/C++ extension installed add `"${workspaceFolder}/t
 
 # Libraries
 
-* [argp - C++ option parser library](argp/README.md)
+* [AGRP - C++ option parser library.](argp/README.md)
+* [STRINGTOOLS - simple string processing.](stringtools/README.md)
