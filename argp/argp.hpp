@@ -33,6 +33,7 @@ class Options {
         void addOption(std::string short_arg, std::string long_arg, std::string desc, bool * ptr);
         void addOption(std::string short_arg, std::string long_arg, std::string desc, std::string * ptr);
         void parse(int argc, char *argv[]);
+        void printHelp();
 
     private:
         std::string prog_name;
@@ -148,6 +149,16 @@ void Options::parse(int argc, char *argv[]) {
             }
         }
     }
+}
+
+void Options::printHelp() {
+    int maxLength = 0;
+    for (int i = 0; i < this->total; i++)
+        if (this->short_arg[i].size() + this->long_arg[i].size() > maxLength)
+            maxLength = this->short_arg[i].size() + this->long_arg[i].size();
+    std::cout << this->prog_desc << "\n\n";
+    for (int i = 0; i < this->total; i++)
+        std::cout << "  " << this->short_arg[i] << ", " << this->long_arg[i] << std::string(3 + maxLength - this->short_arg[i].size() + this->long_arg[i].size(), ' ') << this->descriptions[i];
 }
 
 } // namespace argp
