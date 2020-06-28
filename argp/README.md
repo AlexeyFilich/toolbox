@@ -1,33 +1,21 @@
-# Quick start
+# Usage
 
-Argp is a simple C++ option parser library.
-
-There are two ways to give options:<br>
-    -short<br>
-    -short argument<br>
-    --long<br>
-    --long argument<br>
-
-# Basics
-
-From `toolbox` repository:
+From `toolbox` repository include `argp/argp.hpp`
 ```cpp
-#include <argp/argp.hpp>
+#include "argp/argp.hpp"
 ```
 
-Create a `argp::Options` instance.
-
+Create a `argp::Options` object
 ```cpp
-argp::Options options("Program name", "Program description (one line)");
+argp::Options options("Program name", "One line program description");
 ```
 
-Then use `addOptions`.
-
+Add custom options using `options.addOption()` function
 ```cpp
-int intVar = 0;
-float floatVar = 0.0f;
-bool boolVar = false;
-std::string stringVar = "";
+int intVar = 5; // 5 is default value
+float floatVar = 0.0f; // 0.0f is default value
+bool boolVar = false; // false is default value
+std::string stringVar = "Hello, world!"; // "Hello, world!" is default value
 
 options.addOptions("short1", "long1", "Description", &intVar);
 options.addOptions("short2", "long2", "Description", &floatVar);
@@ -36,21 +24,14 @@ options.addOptions("short4", "long4", "Description", &stringVar);
 ```
 Variables should be initialized. If parser fails finding argument for variable, value, specified during initialization will be used.
 
-Options are declared with a short and a long option. A description must be provided. Last argument is pointer to variable, where argument will be written
+Note: only `int`, `float`, `bool`, and `std::string` are supported.
 
-Please note: only `int`, `float`, `bool`, and `std::string` are supported.
-
-To parse the command line do:
-
+Pass `argc` and `argv` from `int main(int argc, char *argv[]) {`
 ```cpp
 options.parse(argc, argv);
 ```
 
 Now all arguments will be stored in corresponding variables. Boolean variables will be set to `false` if their flag was not set.
-
-# Linking
-
-This is a header only library.
 
 # TODO list
 

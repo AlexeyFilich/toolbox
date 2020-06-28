@@ -101,6 +101,22 @@ void resetBackgroundColor() {
     colortype::ESC::foreground_color = "49";
 }
 
+void enableUnderline() {
+    colortype::ESC::underline = true;
+}
+
+void disableUnderline() {
+    colortype::ESC::underline = false;
+}
+
+void enableReverseVideo() {
+    colortype::ESC::reverseVideo = true;
+}
+
+void disableReverseVideo() {
+    colortype::ESC::reverseVideo = false;
+}
+
 std::string getEscapeString(std::string esc, std::string fgclr, std::string bgclr, bool underline, bool reverseVideo) {
     std::string temp = esc + "[" + fgclr + ";" + bgclr;
     if (underline)
