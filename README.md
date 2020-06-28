@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/alexeyfilich/toolbox/badge)](https://www.codefactor.io/repository/github/alexeyfilich/toolbox)
+
 # Install
 ```
 $ git submodule add https://github.com/AlexeyFilich/toolbox third-party/toolbox
