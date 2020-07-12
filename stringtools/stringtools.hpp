@@ -2,10 +2,12 @@
 #define STRINGTOOLS_H
 #ifdef STRINGTOOLS_H
 
+/* C++ */
 #include <iostream>
 #include <regex>
 #include <string>
 #include <vector>
+/* END */
 
 namespace stringtools {
 

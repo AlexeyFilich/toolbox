@@ -1,6 +1,6 @@
 #pragma once
-#define COLORTYPER_H
-#ifdef COLORTYPER_H
+#define COLORTYPE_H
+#ifdef COLORTYPE_H
 
 /* C++ */
 #include <iostream>
