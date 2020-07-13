@@ -18,4 +18,5 @@ For Visual Studio Code with C/C++ extension installed add `"${workspaceFolder}/t
 * [AGRP](argp/README.md)
 * [COLORTYPE](ColorType/README.md)
 * [LOGGER](logger/README.md)
+* [SIMPLEFS](simplefs/README.md)
 * [STRINGTOOLS](stringtools/README.md)
