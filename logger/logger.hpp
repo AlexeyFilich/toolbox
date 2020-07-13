@@ -11,7 +11,7 @@
 /* End */
 
 namespace logger {
-    std::string get_time() {
+    inline std::string get_time() {
         time_t _time = std::time(nullptr);
         tm time = *std::localtime(std::addressof(_time));
         std::string output = "";
@@ -21,11 +21,11 @@ namespace logger {
         return output;
     }
 
-    void log(std::string str_a) {
+    inline void log(std::string str_a) {
         std::cout << "[" << logger::get_time() << "] " << str_a << "\n";
     }
 
-    void log(std::string str_a, std::string str_b) {
+    inline void log(std::string str_a, std::string str_b) {
         std::cout << "[" << logger::get_time() << "][" << str_a << "] " << str_b << "\n";
     }
 } // namespace logger
