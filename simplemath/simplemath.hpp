@@ -7,7 +7,7 @@
 
 namespace simplemath {
 
-float constrain(float value, float max, float min) {
+float constrain(float value, float min, float max) {
     if (value < min)
         return min;
     if (value > max)
@@ -15,7 +15,7 @@ float constrain(float value, float max, float min) {
     return value;
 }
 
-float wraprange(float value, float max, float min) {
+float wraprange(float value, float min, float max) {
     if (value < min)
         return simplemath::wraprange(value + (max - min), max, min);
     if (value > max)
