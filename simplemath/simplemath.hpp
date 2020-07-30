@@ -16,10 +16,10 @@ float constrain(float value, float min, float max) {
 }
 
 float wraprange(float value, float min, float max) {
-    if (value < min)
-        return simplemath::wraprange(value + (max - min), max, min);
-    if (value > max)
-        return simplemath::wraprange(value - (max - min), max, min);
+    if (value < min) {
+        return simplemath::wraprange(value + (max - min), min, max);
+    } else if (value > max)
+        return simplemath::wraprange(value - (max - min), min, max);
     return value;
 }
 
