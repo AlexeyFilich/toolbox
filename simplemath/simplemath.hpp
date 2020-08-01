@@ -1,6 +1,6 @@
-#pragma once
+// #pragma once
+#ifndef SIMPLEMATH_H
 #define SIMPLEMATH_H
-#ifdef SIMPLEMATH_H
 
 /* C++ */
 /* End */
